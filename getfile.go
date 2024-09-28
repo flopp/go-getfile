@@ -13,7 +13,7 @@ type Client struct {
 	httpClient  *http.Client
 }
 
-func NewClient(delay time.Duration) *Client {
+func NewClient() *Client {
 	return &Client{"", nil, &http.Client{}}
 }
 
