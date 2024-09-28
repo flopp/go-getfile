@@ -21,7 +21,7 @@ func (c *Client) SetUserAgent(userAgent string) {
 	c.userAgent = userAgent
 }
 
-func (c *Client) SetRateLimit(delay time.Duration) {
+func (c *Client) SetDelay(delay time.Duration) {
 	if c.rateLimiter != nil {
 		c.rateLimiter.Stop()
 		c.rateLimiter = nil
