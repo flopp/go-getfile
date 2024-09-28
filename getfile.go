@@ -34,7 +34,7 @@ func (c *Client) SetDelay(delay time.Duration) {
 
 func (d *Client) GetIfOutdated(url, targetFilePath string, maxFileAge time.Duration) error {
 	if internal.FileExists(targetFilePath) {
-		if fileAge, err := internal.FileAge(targetFilePath); err != nil {
+		if fileAge, err := internal.FileAge(targetFilePath); err == nil {
 			if fileAge <= maxFileAge {
 				return nil
 			}
