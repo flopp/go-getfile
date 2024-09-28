@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"time"
 
-	"githup.com/flopp/go-getfile/internal"
+	"github.com/flopp/go-getfile/internal"
 )
 
 type Client struct {
